@@ -9,7 +9,6 @@ public class ListNode {
     }
 }
 
-
 class Solution {
     public boolean hasCycle(ListNode head) {
         //链表为空或链表只有一个节点,肯定没有环
