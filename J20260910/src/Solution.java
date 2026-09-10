@@ -1,5 +1,4 @@
 import java.util.Stack;
-
 class Solution {
     public boolean isValid(String s) {
         //奇数个括号肯定不是有效括号
