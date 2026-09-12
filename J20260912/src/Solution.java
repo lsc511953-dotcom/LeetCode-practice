@@ -7,7 +7,6 @@ class Solution {
             return false;
         }
         Stack<Character> stack = new Stack<>();
-
         for(char c : s.toCharArray()) {
             if(c == '(' || c == '{' || c == '[') {
                 stack.push(c);
@@ -16,7 +15,9 @@ class Solution {
                     return false;
                 }
 
-                if(stack.peek() == '(' && c == ')' || stack.peek() == '{' && c == '}' || stack.peek() == '[' && c == ']' ) {
+                char ch = stack.peek();
+
+                if((ch == '(' && c == ')') || (ch == '{' && c == '}') || (ch == '[' && c == ']') ) {
                     stack.pop();
                 }else {
                     return false;
